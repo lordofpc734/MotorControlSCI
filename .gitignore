@@ -1,0 +1,24 @@
+# CCS project files
+**/ccs/*.launches
+**/ccs/*.log
+**/ccs/.metadata/
+**/ccs/.settings/
+**/ccs/Debug/
+**/ccs/Release/
+
+# Common build artifacts anywhere
+*.out
+*.exe
+*.d
+*.map
+*.hex
+*.bin
+*.obj
+
+# Motorware library (exclude entire folder)
+motorware_1_01_00_18/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
