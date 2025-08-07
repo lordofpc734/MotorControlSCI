@@ -1,3 +1,5 @@
+// Module for SCI UART Reception for the TMS320F28069M MCU
+
 #include "scihelper.h"
 #include <string.h>
 #include <strings.h>
