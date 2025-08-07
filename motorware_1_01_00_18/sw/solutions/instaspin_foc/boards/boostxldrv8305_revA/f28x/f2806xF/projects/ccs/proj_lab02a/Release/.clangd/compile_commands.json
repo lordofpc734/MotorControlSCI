@@ -1,0 +1,97 @@
+[
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/cpu/src/32b/f28x/f2806x/CodeStartBranch.asm"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/adc/src/32b/f28x/f2806x/adc.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/clk/src/32b/f28x/f2806x/clk.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/cpu/src/32b/f28x/f2806x/cpu.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/drvic/drv8305/src/32b/f28x/f2806x/drv8305.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/flash/src/32b/f28x/f2806x/flash.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/gpio/src/32b/f28x/f2806x/gpio.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/hal.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/osc/src/32b/f28x/f2806x/osc.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/pie/src/32b/f28x/f2806x/pie.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/pll/src/32b/f28x/f2806x/pll.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/src/proj_lab02a.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/pwm/src/32b/f28x/f2806x/pwm.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/pwr/src/32b/f28x/f2806x/pwr.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/spi/src/32b/f28x/f2806x/spi.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/timer/src/32b/f28x/f2806x/timer.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/usDelay/src/32b/f28x/usDelay.asm"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/user/src/32b/user.c"
+   },
+   {
+      "directory" : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/projects/ccs/proj_lab02a/Release",
+      "command"   : "clang++ -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/modules/hal/boards/boostxldrv8305_revA/f28x/f2806x/src/\" -I\"/home/rmal/ti/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18/sw/solutions/instaspin_foc/boards/boostxldrv8305_revA/f28x/f2806xF/src\" -I\"/home/rmal/ti/motorware/motorware_1_01_00_18\" -DFAST_ROM_V1p6 -xc",
+      "file"      : "/home/rmal/ti/motorware/motorware_1_01_00_18/sw/drivers/wdog/src/32b/f28x/f2806x/wdog.c"
+   }
+]

@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "proj_lab03b",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "proj_lab03b",
+                "resourceId": "/proj_lab03b"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS100v2 USB Emulator_0",
+                    "cores": [
+                        {
+                            "name": "C28xx",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues>\n\n  <property id=\"AllowInterruptsWhenHalted\">\n    <curValue>1</curValue>\n  </property>\n\n  <property id=\"FlashFiles\">\n    <curValue></curValue>\n  </property>\n\n</PropertyValues>\n"
+                            }
+                        },
+                        {
+                            "name": "CLA_0",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "launchSettings": {
+                "coresToLoadForProjectLaunch": [
+                    "C28xx"
+                ]
+            }
+        }
+    ]
+}
