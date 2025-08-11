@@ -33,10 +33,11 @@ This project integrates an InstaSPIN-FOC single motor example with additional SC
 
 ## 0) SCIA/SCIB
 
-The TMS320F28069M on the LAUNCHXL-F28069M Development Board is equipped with two Serial UART (referred to as SCI) Either SCIA OR SCIB can be routed to the USB<->UART bridge by configuring JP7 and JP6.
-For SCIA (GPIO ports 28 (RX), 29 (TX)), Set JP7 to ON and JP6 to OFF
-For SCIB (GPIO ports 15 and 58), Set JP7 to OFF and JP6 to ON
-Throughout the rest of these instructions, necessary code has been given for both SCIA and SCIB however, SCIA has been used
+- The TMS320F28069M on the LAUNCHXL-F28069M Development Board is equipped with two Serial UART (referred to as SCI) modules
+- Either SCIA OR SCIB can be routed to the USB<->UART bridge by configuring JP7 and JP6
+  - For SCIA (GPIO ports 28 (RX), 29 (TX)), Set JP7 to ON and JP6 to OFF
+  - For SCIB (GPIO ports 15 and 58), Set JP7 to OFF and JP6 to ON
+- Throughout the rest of these instructions, necessary code has been given for both SCIA and SCIB however, SCIA has been used
 
 ## 1) Project import
 
