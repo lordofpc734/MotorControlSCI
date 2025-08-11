@@ -13,9 +13,8 @@ This project integrates an InstaSPIN-FOC single motor example with additional SC
 # Tested environment & prerequisites
 
 - **Tested on:** Ubuntu 20.04 LTS (other Linux distributions may work).
-- **CCS version used:** CCS 20.2 (older CCS versions such as CCS 12 are also mentioned in the original notes and may work).
+- **CCS version used:** CCS 20.2 (older CCS versions such as CCS 12 also work. CCS12 recommended for datalogging using the DATALOG module (will be added later)).
 - **MotorWare:** MotorWare v18 (`motorware_1_01_00_18`) — download from TI: [https://www.ti.com/tool/MOTORWARE](https://www.ti.com/tool/MOTORWARE) *You will need a Windows machine or WINE to run the MotorWare installer/extractor to obtain the **`motorware_1_01_00_18`** directory.*
-- Basic familiarity with CCS project import and editing C files in the MotorWare example tree.
 
 ---
 
@@ -31,6 +30,13 @@ This project integrates an InstaSPIN-FOC single motor example with additional SC
 ---
 
 # Detailed steps
+
+## 0) SCIA/SCIB
+
+The TMS320F28069M on the LAUNCHXL-F28069M Development Board is equipped with two Serial UART (referred to as SCI) Either SCIA OR SCIB can be routed to the USB<->UART bridge by configuring JP7 and JP6.
+For SCIA (GPIO ports 28 (RX), 29 (TX)), Set JP7 to ON and JP6 to OFF
+For SCIB (GPIO ports 15 and 58), Set JP7 to OFF and JP6 to ON
+Throughout the rest of these instructions, necessary code has been given for both SCIA and SCIB however, SCIA has been used
 
 ## 1) Project import
 
@@ -147,24 +153,22 @@ Adjust the formula and value if your LSPCLK or desired baud differs.
 
 ## 6) Call the SCI setup functions from `HAL_setParams(...)` (hal.c)
 
-Add these calls in `HAL_setParams(...)` so the SCI is initialized during HAL setup (insert them near other peripheral setups):
+Add these calls in `HAL_setParams(...)` so SCIA and SCIB are initialized during HAL setup (insert them near other peripheral setups, you may omit SCIB if not using it):
 
 ```c
-  // setup the spiB
-  HAL_setupSpiB(handle);
-
-  
   // setup the sciA
   HAL_setupSciA(handle);
+  
+  
+  // setup the sciB
+  HAL_setupSciB(handle);
 ```
-
-(If you need SCI B as well, add `HAL_setupSciB(handle);` accordingly.)
 
 ---
 
 ## 7) Enable the SCI clocks (hal.c)
 
-In `hal.c`, enable the SCI clocks. The original instruction suggested commenting out or replacing any `CLK_disableSciaClock(obj->clkHandle);` and instead enable SCIA/SCIB:
+In `hal.c`, enable the SCI clocks. Comment out `CLK_disableSciaClock(obj->clkHandle);` and instead enable SCIA/SCIB:
 
 ```c
   CLK_enableSciaClock(obj->clkHandle);
@@ -175,7 +179,7 @@ In `hal.c`, enable the SCI clocks. The original instruction suggested commenting
 
 ## 8) GPIO pin mapping for SCI
 
-If you are using SCIA on GPIO ports 28 (RX) and 29 (TX), update the UARTB (or UARTA) GPIO mappings in `hal.c`. Example snippet from the original instructions (copy verbatim):
+If you are using SCIA on GPIO ports 28 (RX) and 29 (TX), update the UARTB (or UARTA) GPIO mappings in `hal.c`. Example snippet (copy verbatim):
 
 ```c
   // UARTB RX
@@ -219,16 +223,16 @@ extern void HAL_enableSciInts(HAL_Handle handle);
 ```
 
 And add this implementation to `hal.c` **(copy verbatim)**:
-
+Note: Change ``sciAHandle`` to ``sciBHandle`` and ``PIE_InterruptSource_SCIARX`` to ``PIE_InterruptSource_SCIBRX``if using SCIB
 ```c
 void HAL_enableSciInts(HAL_Handle handle)
 {
   HAL_Obj *obj = (HAL_Obj *)handle;
   // enable the PIE interrupts associated with the SCI interrupts
-  // enable SCIB RX interrupt in PIE
+  // enable SCIA RX interrupt in PIE
   PIE_enableInt(obj->pieHandle,PIE_GroupNumber_9,PIE_InterruptSource_SCIARX);
   // enable SCI RX interrupts
-  // enable SCIB RX interrupt
+  // enable SCIA RX interrupt
   SCI_enableRxInt(obj->sciAHandle);
   // enable the cpu interrupt for SCI interrupts
   CPU_enableInt(obj->cpuHandle,CPU_IntNumber_9);
@@ -277,7 +281,7 @@ In the HAL init vector setup, replace or augment the default ADC callback wiring
   //Added
   pie->SCIRXINTA = &sciARxISR;
 ```
-
+Note: Change ``SCIRXINTA`` to ``SCIRXINTB`` and ``&sciARxISR`` to ``&sciBRxISR`` if using SCIB
 Also add the SCI RX ISR prototype to the globals section in `hal.h`:
 
 ```c
@@ -292,7 +296,7 @@ And add the SCI-A ISR prototype to the function prototypes in `main.h`:
 //!
 interrupt void sciARxISR(void);
 ```
-
+Change ``sciARxISR*`` to ``sciBRxISR*`` if using SCIB
 ---
 
 ## 13) SCI UART module architecture
