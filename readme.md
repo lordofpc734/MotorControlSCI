@@ -2,8 +2,6 @@
 
 This repository contains code to run and control BLDC motors using Texas Instruments **MotorWare v18** via Serial (SCI/UART).
 
-This README organizes and clarifies the original instructions so you can get the project building and running in CCS (Code Composer Studio).
-
 ---
 
 # Overview
